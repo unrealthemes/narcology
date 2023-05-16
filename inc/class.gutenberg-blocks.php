@@ -24,9 +24,9 @@ class UT_Guneberg_Blocks {
             array_push(
                 $block_categories,
                 array(
-                    'slug'  => 'example_slug',
-                    'title' => 'Example Category',
-                    'icon'  => 'example_icon',
+                    'slug'  => 'narcology',
+                    'title' => 'Нарколог',
+                    'icon'  => 'narcology_icon',
                 )
             );
         }
@@ -38,13 +38,67 @@ class UT_Guneberg_Blocks {
         if ( function_exists('acf_register_block_type') ) {
     
             acf_register_block_type([
-                'name'              => 'title',
-                'title'             => 'Заглавие H1',
-                'description'       => __('A custom description.'),
-                'render_template'   => 'template-parts/gutenberg-blocks/title.php',
-                'category'          => 'example_slug',
-                'icon'              => 'example_icon',
-                'keywords'          => [ 'Заглавие', 'H1' ],
+                'name'              => 'info_banner',
+                'title'             => 'Информационный баннер',
+                // 'description'       => __('A custom description.'),
+                'render_template'   => 'template-parts/gutenberg-blocks/info-banner.php',
+                'category'          => 'narcology',
+                'icon'              => 'narcology_icon',
+                'keywords'          => [ 'Баннер' ],
+                'example'           => [
+                    'attributes' => [
+                        'mode' => 'preview',
+                        'data' => [
+                            'is_preview' => true
+                        ]
+                    ]
+                ]
+            ]);
+            
+            acf_register_block_type([
+                'name'              => 'img_blocks',
+                'title'             => 'Блоки с изображениями',
+                // 'description'       => __('A custom description.'),
+                'render_template'   => 'template-parts/gutenberg-blocks/img-blocks.php',
+                'category'          => 'narcology',
+                'icon'              => 'narcology_icon',
+                'keywords'          => [ 'Блоки', 'Изображение' ],
+                'example'           => [
+                    'attributes' => [
+                        'mode' => 'preview',
+                        'data' => [
+                            'is_preview' => true
+                        ]
+                    ]
+                ]
+            ]);
+            
+            acf_register_block_type([
+                'name'              => 'steps',
+                'title'             => 'Шаги',
+                // 'description'       => __('A custom description.'),
+                'render_template'   => 'template-parts/gutenberg-blocks/steps.php',
+                'category'          => 'narcology',
+                'icon'              => 'narcology_icon',
+                'keywords'          => [ 'Блоки', 'Шаги' ],
+                'example'           => [
+                    'attributes' => [
+                        'mode' => 'preview',
+                        'data' => [
+                            'is_preview' => true
+                        ]
+                    ]
+                ]
+            ]);
+            
+            acf_register_block_type([
+                'name'              => 'steps-percent',
+                'title'             => 'Шаги (проценты)',
+                // 'description'       => __('A custom description.'),
+                'render_template'   => 'template-parts/gutenberg-blocks/steps-percent.php',
+                'category'          => 'narcology',
+                'icon'              => 'narcology_icon',
+                'keywords'          => [ 'Блоки', 'Шаги', 'Проценты' ],
                 'example'           => [
                     'attributes' => [
                         'mode' => 'preview',
