@@ -108,6 +108,168 @@ class UT_Guneberg_Blocks {
                     ]
                 ]
             ]);
+            
+            acf_register_block_type([
+                'name'              => 'price',
+                'title'             => 'Цены',
+                // 'description'       => __('A custom description.'),
+                'render_template'   => 'template-parts/gutenberg-blocks/price.php',
+                'category'          => 'narcology',
+                'icon'              => 'narcology_icon',
+                'keywords'          => [ 'Блоки', 'Цена' ],
+                'example'           => [
+                    'attributes' => [
+                        'mode' => 'preview',
+                        'data' => [
+                            'is_preview' => true
+                        ]
+                    ]
+                ]
+            ]);
+            
+            acf_register_block_type([
+                'name'              => 'order-form',
+                'title'             => 'Форма заказа',
+                // 'description'       => __('A custom description.'),
+                'render_template'   => 'template-parts/gutenberg-blocks/order-form.php',
+                'category'          => 'narcology',
+                'icon'              => 'narcology_icon',
+                'keywords'          => [ 'Форма' ],
+                'example'           => [
+                    'attributes' => [
+                        'mode' => 'preview',
+                        'data' => [
+                            'is_preview' => true
+                        ]
+                    ]
+                ]
+            ]);
+            
+            acf_register_block_type([
+                'name'              => 'support',
+                'title'             => 'Помощь',
+                // 'description'       => __('A custom description.'),
+                'render_template'   => 'template-parts/gutenberg-blocks/support.php',
+                'category'          => 'narcology',
+                'icon'              => 'narcology_icon',
+                'keywords'          => [ 'Помощь' ],
+                'example'           => [
+                    'attributes' => [
+                        'mode' => 'preview',
+                        'data' => [
+                            'is_preview' => true
+                        ]
+                    ]
+                ]
+            ]);
+            
+            acf_register_block_type([
+                'name'              => 'info-blocks',
+                'title'             => 'Инфо блоки',
+                // 'description'       => __('A custom description.'),
+                'render_template'   => 'template-parts/gutenberg-blocks/info-blocks.php',
+                'category'          => 'narcology',
+                'icon'              => 'narcology_icon',
+                'keywords'          => [ 'Инфо блоки' ],
+                'example'           => [
+                    'attributes' => [
+                        'mode' => 'preview',
+                        'data' => [
+                            'is_preview' => true
+                        ]
+                    ]
+                ]
+            ]);
+            
+            acf_register_block_type([
+                'name'              => 'doctors',
+                'title'             => 'Врачи',
+                // 'description'       => __('A custom description.'),
+                'render_template'   => 'template-parts/gutenberg-blocks/doctors.php',
+                'category'          => 'narcology',
+                'icon'              => 'narcology_icon',
+                'keywords'          => [ 'Врачи' ],
+                'example'           => [
+                    'attributes' => [
+                        'mode' => 'preview',
+                        'data' => [
+                            'is_preview' => true
+                        ]
+                    ]
+                ]
+            ]);
+            
+            acf_register_block_type([
+                'name'              => 'certificates',
+                'title'             => 'Сертификаты',
+                // 'description'       => __('A custom description.'),
+                'render_template'   => 'template-parts/gutenberg-blocks/certificates.php',
+                'category'          => 'narcology',
+                'icon'              => 'narcology_icon',
+                'keywords'          => [ 'Сертификаты' ],
+                'example'           => [
+                    'attributes' => [
+                        'mode' => 'preview',
+                        'data' => [
+                            'is_preview' => true
+                        ]
+                    ]
+                ]
+            ]);
+            
+            acf_register_block_type([
+                'name'              => 'faq',
+                'title'             => 'Вопрос-Ответ',
+                // 'description'       => __('A custom description.'),
+                'render_template'   => 'template-parts/gutenberg-blocks/faq.php',
+                'category'          => 'narcology',
+                'icon'              => 'narcology_icon',
+                'keywords'          => [ 'Вопрос', 'Ответ' ],
+                'example'           => [
+                    'attributes' => [
+                        'mode' => 'preview',
+                        'data' => [
+                            'is_preview' => true
+                        ]
+                    ]
+                ]
+            ]);
+            
+            acf_register_block_type([
+                'name'              => 'info-modal',
+                'title'             => 'Информационный блок',
+                // 'description'       => __('A custom description.'),
+                'render_template'   => 'template-parts/gutenberg-blocks/info-modal.php',
+                'category'          => 'narcology',
+                'icon'              => 'narcology_icon',
+                'keywords'          => [ 'Инфо', 'Блок' ],
+                'example'           => [
+                    'attributes' => [
+                        'mode' => 'preview',
+                        'data' => [
+                            'is_preview' => true
+                        ]
+                    ]
+                ]
+            ]);
+            
+            acf_register_block_type([
+                'name'              => 'reviews',
+                'title'             => 'Отзывы',
+                // 'description'       => __('A custom description.'),
+                'render_template'   => 'template-parts/gutenberg-blocks/reviews.php',
+                'category'          => 'narcology',
+                'icon'              => 'narcology_icon',
+                'keywords'          => [ 'Отзывы' ],
+                'example'           => [
+                    'attributes' => [
+                        'mode' => 'preview',
+                        'data' => [
+                            'is_preview' => true
+                        ]
+                    ]
+                ]
+            ]);
 
         }
     }
