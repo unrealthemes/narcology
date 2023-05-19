@@ -10,28 +10,64 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+	<main>
 
 		<?php
 		while ( have_posts() ) :
 			the_post();
+			$categories = get_the_category(get_the_ID());
+			?>
 
-			get_template_part( 'template-parts/content', get_post_type() );
+			<div class="di_fon2">
+				<div class="container">
+					<div class="row_di">
+						<div class="blog_post"> 	
+							<article class="blog_post_content">
+								<div class="row_di">  
+								
+									<?php the_post_thumbnail(); ?> 
+									
+									<ul class="blog_post_ul"> 
 
-			the_post_navigation();
+										<?php if ($categories) : ?>
+											<?php foreach ($categories as $category) : ?>
+												<li>
+													<a href="<?php echo esc_url(get_category_link($category->term_id)); ?>">
+														<?php echo esc_html($category->name); ?>
+													</a>
+												</li>
+											<?php endforeach; ?>
+										<?php endif; ?>
 
+										<li><?php echo get_the_date('d F Y'); ?></li>
+									</ul> 
+									
+									<?php the_title('<h1>', '</h1>'); ?> 
+									
+									<div class="container_di_780">
+
+										<?php the_content(); ?>
+								
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<?php 
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
 				comments_template();
 			endif;
+			?>
 
-		endwhile; // End of the loop.
-		?>
+			<?php get_template_part('template-parts/related', 'posts'); ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		<?php endwhile; ?>
+
+	</main>
 
 <?php
-get_sidebar();
 get_footer();

@@ -99,3 +99,151 @@ div.wpcf7-spam-blocked::after {
     display: none;
 }
 /* END: Response cf7 */
+
+.map-padding-zero {
+    padding: 0!important;
+}
+
+.wp-block-table table {
+    width: 100%;
+    margin: 30px 0;
+    border-collapse: collapse;
+    overflow-y: scroll;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 568px) {
+    .wp-block-table table {
+        margin: auto;
+        border-collapse: collapse;
+        overflow-x: auto;
+        display: block;
+        width: fit-content;
+        max-width: 100%;
+        margin: 30px auto;
+    }
+}
+
+.wp-block-table table tr:nth-of-type(odd) {
+    background: #EDF8FB;
+}
+
+.wp-block-table table tr {
+    background: white;
+}
+
+.wp-block-table table td {
+    padding: 15px 20px;
+    border: none;
+    text-align: left;
+    line-height: 1.3;
+}
+
+.wp-block-table table th {
+    padding: 15px 20px;
+    border: none;
+    text-align: left;
+    line-height: 1.3;
+    font-weight: 500;
+    min-width: 185px;
+}
+
+.wp-block-table thead {
+    border-bottom: none !important;
+}
+
+.wp-block-image figcaption {
+    margin: 0;
+    text-align: center;
+    color: #B8B9BA;
+    padding: 0;
+}
+
+div.heateor_sss_sharing_title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 24px;
+    color: #000;
+}
+
+.heateor_sss_sharing_container.heateor_sss_horizontal_sharing {
+    margin-top: 13px;
+}
+
+.comment-body {
+    padding: 35px;
+    border-radius: 3px;
+    border: 1px solid white;
+    border-radius: 30px;
+    color: white;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    align-items: stretch;
+    grid-template-columns: 0.25fr 1fr;
+    grid-gap: 40px;
+}
+
+.comment-author.vcard {
+    font-weight: 600;
+}
+
+.comment-edit-link,
+.comment_vn .coment_item_cintent p a {
+    color: #fff;
+}
+
+.comment_vn {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.comment-list {
+    position: relative;
+    margin-top: 20px;
+}
+
+.row_di.more {
+    text-align: center;
+}
+
+.row_di.more svg circle {
+    stroke: rgb(71 189 212);
+}
+
+.home_blog_item_title {
+    text-align: left;
+}
+
+.preloader {
+    display: none;
+}
+
+main > h1,
+main > h2,
+main > h3,
+main > h4,
+main > h5,
+main > h6,
+main > p {
+    max-width: 1210px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 15px;
+}
+
+main > p {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+main > h1,
+main > h2,
+main > h3,
+main > h4,
+main > h5,
+main > h6 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
