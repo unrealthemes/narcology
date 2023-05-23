@@ -13,8 +13,7 @@ if ( $related ) :
 ?>
 
     <div class="di_fon blog_info">
-        <div class="container">
-            <h3>Другие новости</h3>
+        <div class="container"> 
             <div class="blog_cat">
                 <div class="row_di more"> 
                     <div class="row_10_di">

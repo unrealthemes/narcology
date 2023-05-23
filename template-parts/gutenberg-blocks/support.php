@@ -82,7 +82,7 @@ $txt_btn_form = get_field('txt_btn_form_sp');
                 <?php endif; ?>
 
                 <?php if ($form) : ?>
-                    <a href="#" class="open_popup btn" data-popup-id="<?php echo $id; ?>" onclick="return false">
+                    <a href="#" class="open_popup btn" data-popup-id="<?php echo 'modal_' . $id; ?>" onclick="return false">
                         <?php echo esc_html($txt_btn_form); ?>
                     </a> 
                 <?php endif; ?>
@@ -95,11 +95,11 @@ $txt_btn_form = get_field('txt_btn_form_sp');
 
         <?php 
             get_template_part(
-                'template-parts/modals/support', 
+                'template-parts/modals/info-banner', 
                 'form', 
                 [
                     'form' => $form,
-                    'id' => $id,
+                    'id' => 'modal_' . $id,
                 ]
             ); 
         ?>

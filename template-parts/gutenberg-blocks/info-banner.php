@@ -58,7 +58,7 @@ $form = get_field('select_form_ib');
                     ?>
                         <div class="top_head_niz">
                             <div class="popup_btn">
-                                <a href="#" class="open_popup btn_white" data-popup-id="<?php echo $id; ?>" onclick="return false">
+                                <a href="#" class="open_popup btn_white" data-popup-id="<?php echo 'modal_' . $id; ?>" onclick="return false">
                                     <?php echo $name_form_btn; ?>
                                 </a> 
                             </div>
@@ -92,7 +92,7 @@ $form = get_field('select_form_ib');
                 'form', 
                 [
                     'form' => $form,
-                    'id' => $id,
+                    'id' => 'modal_' . $id,
                 ]
             ); 
         ?>

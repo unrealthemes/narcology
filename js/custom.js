@@ -342,8 +342,8 @@ jQuery(document).ready(function() {
       e.stopPropagation();
     });
     
-    
-    
+ 
+ 
 
     
  
@@ -352,14 +352,6 @@ jQuery(document).ready(function() {
         jQuery(this).next(".header_nav").toggle("fast")
     }); 
  
-     if (jQuery(window).width()  < 879) {
-        jQuery(document).on('click', function(e) { 
-          if (!jQuery(e.target).closest(".mobile_menu_btn").length) {
-            jQuery('.header_nav').hide();
-          } 
-          e.stopPropagation();
-        })
-        } ; 
     
     jQuery(".mobile_menu_btn").on('click', function(){
          jQuery(this).toggleClass('open');

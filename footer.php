@@ -85,20 +85,7 @@
 			</div>
 		</footer>
 		<!-- Footer end -->
-		
-		<!-- popup 2 -->
-		<div id="popup2" class="open_popup_content">
-			<div class="open_popup_content_close"></div>
-			
-			<h5>Вызвать врача на дом</h5>
-			<form>
-				<input type="text" value="" placeholder="Имя" />
-				<input type="text" value="" placeholder="+7 (495) 514-31-66" />
-				<button>Вызвать</button>
-			</form>
-			
-		</div>
-		<!-- popup 2 end -->
+
 		
 		<!-- popup 3 -->
 		<div id="popup3" class="open_popup_content">

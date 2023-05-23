@@ -74,7 +74,7 @@ $phone_form = get_field('phone_form_s');
             <div class="etap_block">
 
                 <div class="etap_block_btn">
-                    <a href="#" class="open_popup btn" data-popup-id="<?php echo $id; ?>" onclick="return false">
+                    <a href="#" class="open_popup btn" data-popup-id="<?php echo 'modal_' . $id; ?>" onclick="return false">
                         <?php echo esc_html($txt_btn_form); ?>
                     </a>
                 </div>
@@ -108,7 +108,7 @@ $phone_form = get_field('phone_form_s');
                 'form', 
                 [
                     'form' => $form,
-                    'id' => $id,
+                    'id' => 'modal_' . $id,
                 ]
             ); 
         ?>

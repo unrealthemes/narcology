@@ -85,7 +85,7 @@ Tablet and Mobile
     .tabs ul li img {width: 100px; height: 100px;}
     .tabs ul li {margin: 0 5px;}
     .tabs .tabs_content {padding: 30px 0 30px 0;}
-    .owl-carousel .owl-item {padding: 25px 25px 120px 25px;}
+    .owl-carousel .owl-item {padding: 20px;}
     .certificate_item img {display: inline-block;}
     .chto_vn p {font-size: 14px;}
     .di_fon:after, .di_fon:before, .top_head:before, .top_head:after {width: 100%!important;}
@@ -110,6 +110,10 @@ Tablet and Mobile
     .di_menu_text ul {min-width: inherit;} 
     .skolko_zakaz, .skolko_more {display: none!important;}
     .owl-carousel.owl-drag .owl-item {border: none;}
+    #menu-osnovnoe .sub-menu {position: relative;width: 100%;top: 7px;padding: 10px;}
+    #menu-osnovnoe > li {padding: 0;}
+    .menu-item-has-children:after  {top: 50%;right: 0;display: none;}
+    .menu-item-has-children:hover:after {top: 0;}
 }
  
 @media only screen and (max-width: 568px){

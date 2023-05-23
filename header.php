@@ -82,11 +82,14 @@ $form = get_field('select_form_h', 'option');
 						<?php endif; ?> 
                         
 						<?php if ($form) : ?>
+
+        
 							<div class="popup_btn">
 								<a href="#" class="open_popup btn_white" data-popup-id="popup1" onclick="return false">
 									записаться онлайн
 								</a>
-							</div>
+							</div> 
+                            
 						<?php endif; ?> 
 
                     </div> 
